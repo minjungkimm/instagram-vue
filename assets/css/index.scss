@@ -1,0 +1,668 @@
+.main-container {
+    background-color: #fafafa;
+}
+
+.main-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: {
+        top: 30px;
+    }
+    max-width: 975px;
+    margin: auto;
+
+    @media (max-width: 400px) {
+        padding: {
+            top: 0px;
+        }
+    }
+}
+
+.main-content {
+    margin: {
+        right: 28px;
+    }
+    max-width: 614px;
+    width: 100%;
+
+    @media (max-width: 1000px){
+        margin: 0 auto;
+    }
+}
+
+/* stories start */
+
+.main-content-stories {
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    margin: {
+        top: 0px;
+        bottom: 24px;
+    }
+
+    padding: {
+        top: 16px;
+        bottom: 16px;
+    }
+
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+
+    @media (max-width: 400px) {
+        padding: {
+            top: 10px;
+            bottom: 10px;
+        }
+
+        margin: {
+            bottom: 0px;
+        }
+
+        border-radius: 0px;
+        border: {
+            top: 1px solid #dbdbdb;
+            bottom: 1px solid #dbdbdb;
+            left: none;
+            right: none;
+        }
+
+        background-color: #fafafa;
+    }
+}
+
+.main-content-stories-slide-btn {
+    background-image: url(https://www.instagram.com/static/bundles/es6/sprite_glyphs_2x_d7929b5d6e60.png/d7929b5d6e60.png);
+}
+
+
+.story-container-1 {
+    &:nth-child(1) {
+        margin-left: 10px;
+    }
+}
+
+.story-container-2 {
+    height: 82px;
+    overflow-y: hidden;
+    outline: 0; // TODO: 알아보기
+}
+
+.story-container-3 {
+    width: auto;
+    overflow: auto hidden;
+    display: flex;
+    flex-direction: row;
+}
+
+.story-container {
+    width: 80px;
+    height: 122px;
+}
+
+.story-content {
+    display: block;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    overflow-y: hidden;
+    margin:auto;
+
+    margin: {
+        top: 4px;
+        bottom: 8px;
+    }
+}
+
+.story-img {
+    width: 100%;
+    height: 100%;
+}
+
+.story-footer {
+    display: block;
+    line-height: 14px;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 74px;
+    font-size: 12px;
+    margin: auto;
+}
+
+.canvas { 
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    width: 80px;
+    height: 80px;
+}
+
+/* feeds start */
+
+
+.feed-item {
+    background-color: #fff;
+    border-radius: 3px;
+    border: 1px solid #dbdbdb;
+    margin: {
+        bottom: 60px;
+    }
+
+    @media (max-width : 400px) {
+        border-radius: 0px;
+        border: none;
+        margin: {
+            bottom: 0px;
+        }
+    }
+}
+
+.feed-item-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: {
+        top: 16px;
+        bottom: 16px;
+        left: 16px;
+        right: 40px;
+    };
+}
+
+.profile-img-box {
+    width: 32px;
+    height: 32px;
+
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profile-img {
+    width: 100%;
+    height: 100%;
+}
+
+.profile-user-name {
+    margin: {
+        left: 16px;
+    }
+    font-weight: 600;
+}
+
+.feed-item-content-img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.feed-item-footer-padding {
+    padding: {
+        left: 16px;
+        right: 16px;
+    }
+}
+
+.username {
+    font-weight: 600;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+    margin-right: 5px;
+}
+
+.content {
+    font-size: 14px;
+    overflow-wrap: break-word;
+}
+
+.content-box {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 4px;
+}
+
+.comment-count {
+    color: #8e8e8e;
+}
+
+.feed-item-center-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    margin: {
+        top: 15px;
+        bottom: 15px;
+    }
+}
+
+.feed-item-center-btn-1 {
+    border-radius: 50%;
+    width: 6px;
+    height: 6px;
+    background: #0095f6;
+    margin-right: 5px;
+}
+
+.feed-item-center-btn-2 {
+    border-radius: 50%;
+    width: 6px;
+    height: 6px;
+    background: #a8a8a8;
+    margin-right: 5px;
+}
+
+.feed-item-footer-icons {
+    display: flex;
+    flex-direction: row;
+    margin: {
+        top: -35px;
+        left: -8px;
+    }
+}
+
+.feed-item-footer-icon {
+    display: inline-block;
+    padding: 8px;
+}
+
+.feed-item-bookmark {
+    margin: {
+        left: auto;
+        right: -10px;
+    }
+}
+
+.feed-item-footer-like {
+    padding: {
+        left: 16px;
+        right: 16px;
+    }
+
+    margin: {
+        bottom: 8px;
+    }
+}
+
+.like-count {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 18px;
+}
+
+.feed-item-footer-content-box {
+    margin: {
+        bottom: 4px;
+    }
+}
+
+.feed-item-footer-minute {
+    margin: {
+        bottom: 4px;
+    }
+}
+
+.minute {
+    color: #8e8e8e;
+    font-size: 10px;
+}
+
+.feed-item-footer-comment {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #efefef;
+    min-height: 56px;
+
+    margin: {
+        top: 4px;
+    }
+
+    @media (max-width: 400px) {
+        display: none;
+    }
+}
+
+.comment {
+    color: #8e8e8e;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.comment-up {
+    opacity: .3;
+    color: #0095f6;
+}
+
+/* aside */
+
+.main-aside {
+    max-width: 293px;
+    
+    @media (max-width: 1000px){
+        display: none;
+    }
+}
+
+.aside-my-profile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: {
+        top: 18px;
+        bottom: 10px;
+    }
+}
+
+.aside-my-profile-box {
+    max-height: 141px;
+    height: 100%;
+}
+
+.aside-my-profile-img {
+    width: 56px;
+    height: 56px;
+}
+
+.aside-my-profile-user-name-box {
+    margin: {
+        left: 20px;
+    }
+}
+
+.aside-my-profile-user-name {
+    font-weight: 600;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+}
+
+/* aside - center */
+
+.aside-recommend {
+    margin: {
+        bottom: 12px;
+        left: -16px;
+    }
+}
+
+.aside-recommend-title-box {
+    display: flex;
+    justify-content: space-between;
+    
+    margin: {
+        top: 12px;
+    }
+
+    padding : {
+        left: 16px;
+        right: 16px;
+        top: 4px;
+        bottom: 4px;
+    }
+}
+
+.aside-recommend-title-box-depth {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.aside-recommend-title {
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 600;
+    color: #8e8e8e;
+}
+
+.aside-recommend-show-btn-text {
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 600;
+}
+
+.aside-recommend-content-box {
+    padding: {
+        top : 8px;
+        bottom: 8px;
+    }
+}
+
+.aside-recommend-content-box-depth {
+    height: auto;
+    overflow: hidden auto;
+}
+
+.aside-recommend-content-item {
+    display: flex;
+    flex: 0 0 auto;
+    padding: {
+        left: 16px;
+        right: 16px;
+        top: 8px;
+        bottom: 8px;
+    }
+}
+
+.recommend-content-item-img-box {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    overflow: hidden;
+    flex: 0 0 auto;
+
+    margin: {
+        right : 12px;
+    }
+}
+
+.recommend-content-item-img {
+    width: 100%;
+    height: 100%;
+}
+
+.recommend-content-item-text-box {
+    display: flex;
+    flex-direction: column;
+
+    // https://developer.mozilla.org/ko/docs/Web/CSS/overflow
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.recommend-content-item-text-user-name {
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 600;
+}
+
+.recommend-content-item-text-title {
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 400;
+    color: #8e8e8e;
+}
+
+.recommend-content-item-follow-btn {
+    flex: 0 0 auto;
+    margin: {
+        left: 8px;
+    }
+}
+
+.recommend-content-item-follow-btn-text {
+    color: #0095f6;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+/* aside - footer */
+
+.aside-footer {
+    padding: {
+        bottom: 38px;
+    }
+}
+
+.aside-footer-nav {
+    margin: {
+        bottom: 16px;
+    }
+}
+
+.aside-footer-nav-text {
+    color: #c7c7c7;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 13px;
+
+    &::after {
+        content: '\00B7';
+        margin: 0 .25em 0 .25em;
+    }
+}
+
+.aside-footer-text {
+    color: #c7c7c7;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 13px;
+}
+
+/* section end */
+
+.nav {
+    background-color: #ffffff;
+    @media (min-width: 400px) {
+        border-bottom: 1px solid #dbdbdb;
+    }
+}
+
+.nav-container {
+   @media (min-width: 400px) {
+        display: flex;
+        justify-content: center;
+   }
+}
+
+.nav-container-depth {
+    padding : {
+        left: 20px;
+        right: 20px;
+    }
+
+    box-sizing: border-box;
+    display: flex;
+    align-items: center; // 세로 중앙정렬
+    justify-content: space-between;
+
+    @media (min-width: 400px) {
+        height: 54px;
+        max-width: 975px;
+        width: 100%;
+    }
+
+    @media (max-width: 400px) {
+        height: 44px;
+        padding : {
+            left: 16px;
+            right: 16px;
+        }
+    }
+}
+
+.nav-container-item {
+    display: flex;
+
+    &.input {
+        @media (max-width: 500px) {
+            display: none;
+        }
+    }
+}
+
+.logo-img-box {
+    flex: 1 0 auto;
+}
+
+.nav-container-item-mobile {
+    display: block;
+}
+
+.item-box {
+    display: flex;
+    
+    &.start {
+        justify-content: flex-start;
+    }
+
+    &.center {
+        flex: 1;
+        justify-content: center;
+        margin: {
+            top: 6px;
+        }
+    }
+
+    &.end {
+        justify-content: flex-end;
+    }
+}
+
+.logo-img {
+    max-height: 50%;
+    max-width: 50%;
+}
+
+.m-show {
+    @media (min-width: 400px) {
+        display: none;
+    }
+}
+
+.m-none {
+    @media (max-width: 400px) {
+        display: none;
+    }
+}
+
+.input-box {
+    width : 215px;
+    height : 28px;
+    min-width: 125px; // 화면 사이즈 줄었을 경우 최소값
+}
+
+.search-input {
+    font-size: 14px;
+    padding: {
+        left: 26px;
+        right: 10px;
+        top: 3px;
+        bottom: 3px;
+    };
+
+    background-color: #fafafa;
+
+    border : solid 1px #dbdbdb;
+    border-radius: 3px;
+
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+
+    // background-size: 411px 396px;
+    // background-position: -401px -55px;
+    // background-image: url(https://www.instagram.com/static/bundles/es6/sprite_core_2x_935344957e35.png/935344957e35.png);
+}
+
+.icon {
+    margin-left: 22px;
+}
+
+.my-profile {
+    width: 22px;
+    height: 22px;
+}
+
+/* nav end */
